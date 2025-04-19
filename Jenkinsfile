@@ -57,7 +57,7 @@ pipeline {
 		}
 		stage('Publicar resultados en Performance Plugin') {
             steps {
-                perfReport parsers: [[$class: 'JMeterParser', glob: 'results/resultados.jtl']]
+                perfReport sourceDataFiles: 'results/resultados.jtl'
             }
         }
 
