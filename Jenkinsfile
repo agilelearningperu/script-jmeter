@@ -42,5 +42,19 @@ pipeline {
                 archiveArtifacts artifacts: "${REPORT_DIR}/**/*.*", fingerprint: true
             }
         }
+		
+		stage('Publicar Reporte HTML') {
+			steps {
+				publishHTML(target: [
+					reportDir: 'reportes', // carpeta donde JMeter generó el reporte
+					reportFiles: 'index.html',
+					reportName: 'Reporte de Performance',
+					keepAll: true,
+					alwaysLinkToLastBuild: true,
+					allowMissing: false
+				])
+			}
+		}
+
     }
 }
