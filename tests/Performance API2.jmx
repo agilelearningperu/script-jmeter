@@ -11,36 +11,36 @@
     <hashTree>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="jp@gc - Ultimate Thread Group">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-71437848">
-            <stringProp name="1691">50</stringProp>
+          <collectionProp name="-345991642">
+            <stringProp name="49">1</stringProp>
             <stringProp name="0">0</stringProp>
             <stringProp name="48">0</stringProp>
             <stringProp name="1515111">1800</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="-62859062">
-            <stringProp name="100">100</stringProp>
+          <collectionProp name="-155900306">
+            <stringProp name="49">1</stringProp>
             <stringProp name="50547">300</stringProp>
             <stringProp name="1567">10</stringProp>
             <stringProp name="1512228">1500</stringProp>
             <stringProp name="53">5</stringProp>
           </collectionProp>
-          <collectionProp name="2126485656">
-            <stringProp name="100">100</stringProp>
+          <collectionProp name="2033444412">
+            <stringProp name="49">1</stringProp>
             <stringProp name="53430">600</stringProp>
             <stringProp name="1567">10</stringProp>
             <stringProp name="1509345">1200</stringProp>
             <stringProp name="53">5</stringProp>
           </collectionProp>
-          <collectionProp name="2118312343">
-            <stringProp name="100">100</stringProp>
+          <collectionProp name="2025271099">
+            <stringProp name="49">1</stringProp>
             <stringProp name="56313">900</stringProp>
             <stringProp name="1567">10</stringProp>
             <stringProp name="56313">900</stringProp>
             <stringProp name="53">5</stringProp>
           </collectionProp>
-          <collectionProp name="683107210">
-            <stringProp name="49586">200</stringProp>
+          <collectionProp name="1683243435">
+            <stringProp name="50">2</stringProp>
             <stringProp name="1509345">1200</stringProp>
             <stringProp name="1567">10</stringProp>
             <stringProp name="53430">600</stringProp>
@@ -54,7 +54,7 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
       </kg.apc.jmeter.threads.UltimateThreadGroup>
       <hashTree>
-        <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Tiempo de espera">
+        <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Tiempo de espera" enabled="true">
           <stringProp name="maximumValue">900</stringProp>
           <stringProp name="minimumValue">50</stringProp>
           <stringProp name="outputFormat"></stringProp>
@@ -63,7 +63,7 @@
           <stringProp name="variableName">timer</stringProp>
         </RandomVariableConfig>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="filename">C:/Users/LENOVO/OneDrive/Documents/QE Learning/performance/Clases/booking-data.csv</stringProp>
@@ -75,7 +75,7 @@
           <stringProp name="variableNames">nombre,apellidos,precio,deposito,fecha_inicio,fecha_fin,adicional</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create token"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create token" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="create token" enabled="true">
             <stringProp name="HTTPSampler.domain">restful-booker.herokuapp.com</stringProp>
@@ -128,7 +128,7 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Booking"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Booking" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get booking" enabled="true">
             <stringProp name="HTTPSampler.domain">restful-booker.herokuapp.com</stringProp>
@@ -213,7 +213,7 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -250,7 +250,7 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report">
+        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
