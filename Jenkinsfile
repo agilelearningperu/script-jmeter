@@ -53,6 +53,7 @@ pipeline {
 					alwaysLinkToLastBuild: true,
 					allowMissing: false
 				])
+				perfReport parsers: [[$class: 'JMeterParser', glob: 'results/resultados.jtl']]
 			}
 		}
 
