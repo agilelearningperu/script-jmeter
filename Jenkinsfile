@@ -53,9 +53,13 @@ pipeline {
 					alwaysLinkToLastBuild: true,
 					allowMissing: false
 				])
-				perfReport parsers: [[$class: 'JMeterParser', glob: 'results/resultados.jtl']]
 			}
 		}
+		stage('Publicar resultados en Performance Plugin') {
+            steps {
+                perfReport parsers: [[$class: 'JMeterParser', glob: 'results/resultados.jtl']]
+            }
+        }
 
     }
 }
