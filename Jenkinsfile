@@ -21,7 +21,7 @@ pipeline {
             steps {
                 echo "Ejecutando prueba con JMeter..."
                 sh """
-                    ${JMETER_PATH} -Xms128m -Xmx256m -n -t ${TEST_PLAN} -l ${RESULT_DIR}/resultados.jtl
+                    ${JMETER_PATH} -n -t ${TEST_PLAN} -l ${RESULT_DIR}/resultados.jtl
                 """
             }
         }
